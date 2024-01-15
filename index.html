@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sac Fil Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/58ed258358.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            <ul>
+                <li><a href="" class="nav-tabs">HOME</a></li>
+                <li><a href="" class="nav-tabs">ABOUT</a></li>
+                <li><a href="" class="nav-tabs">EVENTS</a></li>
+                <li><a href="" class="nav-tabs">RESOURCES</a></li>
+                <li><a href="" class="nav-tabs">MEDIA</a></li>
+                <li><a href="" class="nav-tabs">CONTACT</a></li>
+                <li><a href="https://givebutter.com/sacfil" class="donate-btn">DONATE</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Sacramento Filipinx LGBTQIA</h1>
+    <p>A grassroots collective that uplifts the voices and identities of the Filipinx LGBTQIA community on Nisenan, Miwok land, & beyond.</p>
+    <a href="https://docs.google.com/forms/d/1MO2hPWniHdUk8RVZjNZ7N3AyBk7dC11269tMDaOXLwI/viewform?edit_requested=true" class="hero-btn">Get Connected!</a>
+</div>
+
+    </section>
+<!--------About------->
+<div id="about">
+    <div class="container">
+        <h1 class="sub-title">About Us</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.JPEG">
+                <div class="layer">
+                    <h3>Mission & Vision</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.JPEG">
+                <div class="layer">
+                    <h3>Our History and Origin</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.JPEG">
+                <div class="layer">
+                    <h3>Our Team</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+</section>
+
+<!-------------JS for Toggle Menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function openmenu(){
+        navLinks.style.right = "0";
+    }
+    function closemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+        
+</body>
+</html>
